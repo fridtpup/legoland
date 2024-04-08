@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.topbar {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #ffcf00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: auto;
+    height: 75%;
+}
+
+.backgroundImage {
+    width: 100%;
+    min-height: 335px;
+    background-image: url("/storage/LegolandKiddos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundImage .textArea {
+    width: 80%;
+    line-height: 40px;
+    color: white;
+}
+
+.backgroundImage h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.backgroundImage p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.links {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.linkBox {
+    width: 90%;
+    margin-top: -50px;
+}
+
+
+.linkBox li {
+    list-style-type: none;
+    width: auto;
+    height: 40px;
+    border-bottom: solid #006db7 1px;
+    background-color: #e6f0f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkBox a {
+    color: #006db7;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.linkBox li:hover {
+    color: #e6f0f8;
+    background-color: #006db7;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #006db7;
+    color: #e6f0f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+@media screen and (min-width: 1024px){
+    .topBar {
+        display: flex;
+        width: 100%;
+        height: 40px;
+        background-color: #e9ac00;
+    }
+
+    header {
+        height: 100px;
+        justify-content: space-between;
+    }
+
+    header img {
+        margin-left: 56px;
+        height: 70%;
+    }
+    
+}

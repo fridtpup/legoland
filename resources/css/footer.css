@@ -1,0 +1,39 @@
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    color: rgb(147, 147, 147);
+    font-size: 12px;
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.whitePart {
+    width: 100%;
+    height: 100px;    
+}
+
+.footerImg {
+    width: 100%;
+    height: 120px;
+    background-image: url(../../public/storage/legolandFooter.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (min-width: 1024px){
+    .footerImg {
+        height: 250px;
+    }
+}

@@ -1,0 +1,171 @@
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.attractionDesc {
+    width: 100%;
+    height: 600px;
+
+    background-image: url(../../public/storage/148-legoland__k1a3129_final_1920x1080.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    color: white;
+    text-align: center;
+}
+
+.attractionDesc h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.attractionDesc p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    line-height: 25px;
+}
+
+/*  */
+.attractionContainer {
+   width: 60%;
+   margin-top: -250px;
+   padding: 50px;
+   max-width: 280px;
+   height: 600px;
+   background-color: #e6f0f8;
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.attractionList {
+    width: 280px;
+    height: 450px;
+    
+    cursor: grabbing;
+    user-select: none;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+.attractionList::-webkit-scrollbar {
+    display: none;
+}
+
+#nextBtn, #backBtn {
+    width: 50px;
+    height: 50px;
+    color: #006db7;
+    border: 3px solid #006db7;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: lighter;
+    background-color: #aacce7;
+}
+
+#nextBtn:hover, #backBtn:hover {
+    cursor: pointer;
+    background-color: #006db7;
+    border: 3px solid #aacce7;
+    color: #aacce7;
+}
+
+#nextBtn {
+    rotate: 180deg;
+}
+
+#nextBtn p, #backBtn p {
+    margin-top: 10px;
+}
+
+.attractionDiv {
+    width: 98%;
+    margin-bottom: 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.attractionDiv img {
+    width: 100%;
+    max-height: 110px;
+    
+}
+
+.attractionDiv h2, .attractionDiv p {
+    border-top: black 3px solid;
+    margin-top: -5px;
+    padding: 4px 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .attractionDesc h2 {
+        font-size: 40px;
+    }
+
+    .attractionDesc p {
+        font-size: 25px;
+        width: 40%;
+        line-height: 40px;
+    }
+
+    .attractionContainer {
+        width: 80%;
+        max-width: unset;
+        height: max-content;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+        overflow-y: unset;
+        overflow-x: unset;
+    }
+
+    .attractionList {
+        width: 100%;
+        height: auto;
+        margin: 50px 0 0 0;
+
+        overflow-y:auto;
+        overflow-x:unset;
+        cursor: initial;
+        user-select: initial;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    }
+
+
+    .attractionDiv {
+        width: 25%;
+        min-height: 250px;
+        height: min-content;
+    }
+
+    #backBtn, #nextBtn {
+        display: none;
+    }
+}

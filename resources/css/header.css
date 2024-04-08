@@ -1,0 +1,51 @@
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffcf00;
+}
+
+.topBar {
+    width: 100%;
+    height: 40px;
+    background-color: #e9ac00;
+    display: none;
+}
+
+.logoImg {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoImg img {
+    height: 75%;
+}
+
+.logoImg p {
+    display: none;
+}
+
+
+@media screen and (min-width: 815px) {
+    .topBar {
+        display: block;
+    }
+
+    .logoImg {
+        width: 97%;
+        justify-content: space-between;
+    }
+
+    .logoImg img {
+        height: 62%;
+    }
+
+    .logoImg p {
+        display: initial;
+    }
+}
